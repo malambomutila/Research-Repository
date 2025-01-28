@@ -10,8 +10,8 @@ research-repository/
 │   ├── 01_Configs/
 │   │   └── credentials.txt
 │   └── 02_Data/
-│       ├── ZNPHI_Pubmed.csv
-│       └── ZNPHI_Pubmed_Updated.csv
+│       ├── Publications.csv
+│       └── Publications_Updated.csv
 ├── 01_First_Author_Affiliation/
 │   └── affiliation.py
 ├── virtualenv/
@@ -46,7 +46,7 @@ pip install pandas biopython
 ```
 
 ## Input Data Format
-The script expects a CSV file (here, I had `ZNPHI_Pubmed.csv`) with at least one column:
+The script expects a CSV file (`Publications.csv`) with at least one column:
 - `DOI`: Digital Object Identifier for each publication
 
 ## Usage
@@ -57,7 +57,7 @@ python affiliation.py
 ```
 
 ## Output
-The script generates an updated CSV file (`ZNPHI_Pubmed_Updated.csv`) with an additional column:
+The script generates an updated CSV file (`Publications_Updated.csv`) with an additional column:
 - `Affiliation of First Author`: Contains the retrieved affiliation information for each publication's first author
 
 ## Features
@@ -80,11 +80,11 @@ The script includes comprehensive error handling for:
 - API keys and email addresses are loaded securely from a local configuration file
 - The `credentials.txt` file is listed in `.gitignore`
 
-## Chnages
+## Changes
 Edit the lines below to match your CSV file and desired output file:
 ```bash
-publications_file = data_dir / 'ZNPHI_Pubmed.csv'
-output_file = data_dir / 'ZNPHI_Pubmed_Updated.csv'
+publications_file = data_dir / 'Publications.csv'
+output_file = data_dir / 'Publications_Updated.csv'
 ```
 
 ## License

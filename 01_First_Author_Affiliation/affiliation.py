@@ -15,8 +15,8 @@ base_dir = Path.cwd().parent  # Moves one level up from current working director
 # Paths
 credentials_path = base_dir / '00_Local' / '01_Configs' / 'credentials.txt'
 data_dir = base_dir / '00_Local' / '02_Data'
-publications_file = data_dir / 'ZNPHI_Pubmed.csv'
-output_file = data_dir / 'ZNPHI_Pubmed_Updated.csv'
+publications_file = data_dir / 'Publications.csv'
+output_file = data_dir / 'Publications_Updated.csv'
 
 # Step_1
 logger.info("Packages installed and Path set")
